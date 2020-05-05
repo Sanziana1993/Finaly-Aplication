@@ -41,8 +41,8 @@ export default function Promises(){
         
           
             { items
-                .filter(item => item.name.includes(q))
-                .map(item => <Link key={item.id}>{ item.name }</Link>) 
+                .filter(item => item.country.includes(q))
+                .map(item => <Link key={item.id}>{ item.country}</Link>) 
                 
             }
             
