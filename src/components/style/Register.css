@@ -1,0 +1,42 @@
+
+
+
+.formRegister {
+    margin: 0 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.submitButton{
+   
+   background-color:#59B969 ;  
+  
+   font-size: 1em;
+   border-radius: 8px;
+   padding: 10px;
+   border: 1px solid #59B969;
+   box-shadow: 0 1px 0 0 #60BD49 inset;
+   
+}
+.testbox{
+    margin: 20px auto;
+    width: 590px; 
+    height: 550px; 
+    -webkit-border-radius: 8px 7px; 
+    -moz-border-radius: 8px 7px; 
+    border-radius: 8px 7px; 
+    background-color: #ebebeb; 
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border: solid 1px #cbc9c9;
+}
+.inputName
+{
+    margin:  auto;
+    width: 222px; 
+    height: 38px; 
+}
+  .accounttype{
+    margin-left: 8px;
+    margin-top: 20px;
+  }

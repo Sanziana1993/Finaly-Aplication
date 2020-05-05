@@ -1,0 +1,271 @@
+{
+  "users": [
+    {
+      "FName": "Recean",
+      "LName": "Georgiana-Sanziana",
+      "email": "sanzianarecean@yahoo.com",
+      "username": "Sanziana",
+      "password": "1",
+      "retypePassword": "1",
+      "id": 1
+    },
+    {
+      "username": "123",
+      "password": "1",
+      "id": 2
+    },
+    {
+      "username": "Sanziana",
+      "password": "1",
+      "id": 3
+    },
+    {
+      "FName": "Recean",
+      "LName": "Georgiana-Sanziana",
+      "email": "sanzianarecean@yahoo.com",
+      "username": "Sanziana",
+      "password": "1",
+      "retypePassword": "1",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "FName": "Recean",
+      "LName": "Georgiana-Sanziana",
+      "email": "sanzianarecean@yahoo.com",
+      "username": "Sanziana",
+      "password": "1",
+      "retypePassword": "1",
+      "id": 6
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "popularityId": 48004896,
+      "body": "“Just a clean, excellent value for money hotel right in the middle of Ufa.Staff responded to all queries in a quick and friendly manner. They all spoke superb English too.” Benjamin Russia"
+    },
+    {
+      "id": 2,
+      "popularityId": 48004896,
+      "body": "“Overall impression is very good. The hotel is right in the centre, walking distance to almost all main places of Ufa. Service is top, staff is very polite, well-educated. ” Dmitrii Russia"
+    },
+    {
+      "id": 3,
+      "popularityId": 48004896,
+      "body": "“Excellent location,comfortable room,friendly and helpful stuff Would recommend and stay again 100%” Aleksey Russia"
+    },
+    {
+      "id": 4,
+      "popularityId": 713871,
+      "body": "“Exceptional“"
+    },
+    {
+      "id": 5,
+      "popularityId": 713871,
+      "body": "“Good“"
+    },
+    {
+      "review": "good 2",
+      "id": 6
+    },
+    {
+      "formReview": {
+        "review": "10"
+      },
+      "id": 7
+    },
+    {
+      "review": "11",
+      "id": 8
+    },
+    {
+      "review": "5",
+      "id": 9
+    }
+  ],
+  "popularity": [
+    {
+      "id": 713856,
+      "country": "Italia",
+      "name": "Abbazia",
+      "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/110/11097521.jpg",
+      "description": "Set in a restored monastery, Hotel Abbazia is in the quiet Cannaregio district of Venice, 100 m from Santa Lucia Train Station. The hotel features a large courtyard garden with bar.The Abbazia's classic rooms all have modern bathroom and include a minibar and satellite TV. Free Wi-Fi internet access is available in the entire hotel.",
+      "price": "60",
+      "stars": 3,
+      "rating": 8.7,
+      "ty_summary": "Excellent hotel. Great room.",
+      "property_type": "hotel",
+      "hotel_type": [],
+      "last_price_info": null,
+      "has_wifi": true
+    },
+    {
+      "id": 19123041,
+      "country": "Italia",
+      "name": "Hotel dalla Mora",
+      "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1280x900/395/39500182.jpg",
+      "description": "Boasting a canal-view terrace and free WiFi throughout, Hotel dalla Mora is located in the Santa Croce district of Venice, a 3-minute walk from San Nicola da Tolentino Church.Rooms come with wooden furniture, a desk and tiled floors, some feature canal views. They have either a private or a shared external bathroom.A sweet Italian breakfast is served every morning in the breakfast room. During the day you can relax on the terrace, furnished with tables and chairs, and enjoy the views on the canal. A lounge area is also available.",
+      "price": "80",
+      "stars": 2,
+      "rating": 7.3,
+      "ty_summary": "Excellent hotel. Fantastic service.",
+      "property_type": "hotel",
+      "has_wifi": true
+    },
+    {
+      "id": 46455041,
+      "country": "Bulgaria",
+      "name": "Garden of Eden Complex",
+      "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1280x900/408/40819418.jpg",
+      "description": "The south-facing Garden of Eden Complex is located directly at the beach in Sveti Vlas. It offers modern accommodation mostly with sea views and several restaurants and bars.Situated close by to Sunny Beach, the complex offers 7 outdoor pools with children’s sections and 4 pool bars, including a pool patisserie.",
+      "price": "120$",
+      "stars": 5,
+      "rating": 9.4,
+      "ty_summary": "Excellent city hotel. Good for sightseeing with nearby parking areas. Great rooms and fantastic service. Awesome vibe.",
+      "property_type": "hotel",
+      "review1": "2 "
+    },
+    {
+      "id": 39085237,
+      "country": "Russia",
+      "name": "Holiday Inn Ufa",
+      "imgUrl": "https://media-cdn.tripadvisor.com/media/photo-s/09/68/0d/ea/img-20151028-225415-largejpg.jpg",
+      "description": "One of our top picks in Ufa.Featuring free WiFi and a business centre, Holiday Inn Ufa offers accommodation in Ufa city centre. Guests can enjoy the on-site bar. Free private parking is available on site. The rooms are equipped with a flat-screen TV with satellite channels. Some rooms have a seating area for your convenience. Each room includes a private bathroom.",
+      "price": "48",
+      "stars": 4,
+      "rating": 9.1,
+      "ty_summary": "Excellent hotel for solo travelers. Great rooms in excellent location. Awesome vibe.",
+      "property_type": "hotel",
+      "hotel_type": [
+        "Solo Hotel"
+      ],
+      "last_price_info": null,
+      "has_wifi": true,
+      "review1": "Good!!Sanziana"
+    },
+    {
+      "id": 14328856,
+      "country": "Bulgaria",
+      "name": "Redenka Holidat Club",
+      "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1024x768/152/152835467.jpg",
+      "description": "Featuring free WiFi and a business centre, Holiday Inn Ufa offers accommodation in Ufa city centre. Guests can enjoy the on-site bar. Free private parking is available on site. The rooms are equipped with a flat-screen TV with satellite channels. Some rooms have a seating area for your convenience. Each room includes a private bathroom.",
+      "price": "80",
+      "stars": 0,
+      "rating": 7.3,
+      "ty_summary": "Excellent hotel. Awesome rooms and service in a great location.",
+      "property_type": "other",
+      "hotel_type": [],
+      "last_price_info": null,
+      "has_wifi": true
+    },
+    {
+      "id": 48095021,
+      "country": "Grecia",
+      "name": "Vythosl",
+      "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1024x768/216/21623536.jpg",
+      "description": "Featuring free WiFi and a business centre, Holiday Inn Ufa offers accommodation in Ufa city centre. Guests can enjoy the on-site bar. Free private parking is available on site.  The rooms are equipped with a flat-screen TV with satellite channels. Some rooms have a seating area for your convenience. Each room includes a private bathroom.",
+      "price": "45",
+      "stars": 3,
+      "rating": 9.2,
+      "ty_summary": "Excellent hotel for solo travelers. Close to parking areas. Great room. Awesome vibe.",
+      "property_type": "hotel",
+      "hotel_type": [
+        "Solo Hotel"
+      ],
+      "last_price_info": null,
+      "has_wifi": false
+    },
+    {
+      "id": 27416590,
+      "country": "Franta",
+      "name": "Hotel du Palais",
+      "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/226/226076093.jpg",
+      "description": "Located in Montpellier and situated 200 m from the Peyrou Gardens and 120 m from Place de la Canourgue, Hotel du Palais is set in a 200-year old building. Featuring a shaded terrace, this property offers free WiFi access and baggage service. The air-conditioned guest rooms feature a flat-screen TV with cable channels. The private bathrooms have a bath or shower and a hairdryer. The hotel is 600 m from Place de la Comédie, 1 km from The Corum conference centre and 1 km from Montepellier Train Station. Montpellier - Mediterranee Airport is 9 km away.",
+      "price": "110",
+      "stars": 3,
+      "rating": 8.3,
+      "ty_summary": "Very good hotel. Great location.",
+      "property_type": "hotel",
+      "has_wifi": false
+    },
+    {
+      "id": 597367,
+      "country": "Franta",
+      "name": "Crowne Plaza Montpellier Corum",
+      "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/246/246901178.jpg",
+      "description": "Located in the heart of Montpellier, set in front of the Corum Conference Centre and a 10-minute walk from the Opera House, this modern hotel features a fitness centre and an outdoor pool. A flat-screen TV with cable channels, free WiFi and tea and coffee making facilities are available in all of the soundproofed rooms and suites. Each room and suite is decorated in a travel theme and has a private bathroom with bathrobes and luxury products. A Mediterranean-style menu is served in restaurant Maxens, and a buffet breakfast is prepared every morning. Guests can enjoy cocktails on the terrace or in the spacious bar, Tempo.The hotel has direct access to the Corum and is just 400 m from the Fabre Museum. Montpellier St Roch Train Station is a 10-minute drive away. Crowne Plaza Montpellier Corum is 9 km from Montpellier Mediterranée Airport. Charging stations for electric cars are available at this property.",
+      "price": "200",
+      "stars": 4,
+      "rating": 8.2,
+      "ty_summary": "Very good hotel for solo travelers. Located near shopping areas with easy access to parking.",
+      "property_type": "hotel",
+      "has_wifi": true
+    },
+    {
+      "id": 713874,
+      "country": "Spania",
+      "name": "Route Active Hotel",
+      "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/189/189125882.jpg",
+      "description": "Set in Los Realejos in the Tenerife Region, 6.6 km from Puerto de la Cruz, Route Active Hotel features an outdoor pool and views of the sea.  Each room is equipped with a seating area and flat-screen TV. Views of the mountain, pool or garden are featured in all rooms. Every room comes with a private bathroom including free toiletries and a hairdryer. Free WiFi is available in common areas.",
+      "price": "65",
+      "stars": 3,
+      "rating": 8.4,
+      "ty_summary": "Very good hostel. Fantastic service. Great location.",
+      "property_type": "hostel",
+      "has_wifi": true
+    },
+    {
+      "id": 713863,
+      "country": "Spania",
+      "name": "Sol Arona Tenerife",
+      "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/110/110177251.jpg",
+      "description": "One of our top picks in Los Cristianos. Sol Arona Tenerife lies 200 m from the beach of Los Cristianos, in Tenerife. It features a large outdoor pool with sun loungers and rooms with balconies, most with sea views.Children can enjoy their own swimming pool and activities in a playground such as climbing and the superjumper. Meanwhile, parents can enjoy a session in the gym or simply sunbathing on the sun terrace. At the end of the day the family can come together to share a meal in the buffet restaurant before enjoying the nightly entertainment.",
+      "price": "100",
+      "stars": 3,
+      "rating": 9,
+      "ty_summary": "Very good hotel. Fantastic service.",
+      "property_type": "hotel",
+      "has_wifi": true
+    },
+    {
+      "id": 713868,
+      "country": "Romania",
+      "name": "Hilton Garden ",
+      "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1280x900/233/233736342.jpg",
+      "description": "Situated in the Old Town of Bucharest, Hilton Garden Inn Bucharest is 400 m from Bucharest National Theater and provides facilities like free WiFi, a fitness centre, and a shared lounge.",
+      "price": "86",
+      "stars": 3,
+      "rating": 8,
+      "ty_summary": "Very good hotel for solo travelers. Close to parking areas.",
+      "property_type": "hotel",
+      "hotel_type": [
+        "Solo Hotel"
+      ],
+      "last_price_info": null,
+      "has_wifi": true
+    },
+    {
+      "id": 32886586,
+      "country": "Romania",
+      "name": "Calea Poienii Penthouse",
+      "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/103/103161693.jpg",
+      "description": "Offering an outdoor pool, Calea Poienii Penthouse is located a 3-minute drive from the historic centre of Brasov. From the terrace of the apartment, guests have scenic views of the town and the surroundings. Free parking is possible on site.The modern penthouse apartment comes with 2 bedrooms, a living area with a kitchenette, a dining area and a sofa bed, and a bathroom. A flat-screen TV and a washing machine are featured.",
+      "price": "50",
+      "stars": 3,
+      "rating": 8,
+      "ty_summary": "Very good accommodation. Fantastic service.",
+      "property_type": "guest_house",
+      "has_wifi": false
+    },
+    {
+      "name": " Test",
+      "description": "test ",
+      "price": "1",
+      "country": "test",
+      "id": 48095022
+    }
+  ]
+}

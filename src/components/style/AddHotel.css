@@ -1,0 +1,58 @@
+.titleCreate {
+    margin: 0 15px 20px;
+    border-bottom: 2px solid green-border;
+    padding: 5px 10px 5px 0;
+    font-size: 1.1em;
+}
+.main{
+    background-color: white;
+}
+.formHotel{
+ 
+    padding: 40px;
+    max-width:600px;
+    margin:40px auto;
+    box-shadow:0 4px 10px 4px ;
+
+}
+.titleCreate{
+
+  text-align:center;
+  color:red;
+  font-weight:thin;
+  margin:0 0 40px;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: oblique;
+}
+.AddNameHotel,
+.AddDescriptionHotel,
+.AddPriceHotel,
+.AddCountryHotel
+
+{
+    font-size:18px;
+  display:block;
+  width:70%;
+  height:80%;
+  padding:5px 10px;
+  border:1px solid ;
+  border-radius:0;
+}
+
+
+.label{
+    font-size:22px;
+}
+.addButton{
+   
+        
+        font-size:2rem;
+        font-weight:bold;
+        text-transform:uppercase;
+        background-color:red;
+        color:wheat;
+      padding: 5px;
+       
+    
+}

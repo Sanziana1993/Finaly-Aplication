@@ -1,0 +1,21 @@
+img {
+    border:none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 350px;
+    height: 250px;
+  }
+  .card{
+   display: flex;
+   text-align: center;
+   background-color: aqua;
+   padding: 40px;
+   margin : 5px; 
+}
+.titleCard{
+  font-size: 23px;
+}
+
+    
+
+ 

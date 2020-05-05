@@ -1,0 +1,47 @@
+.wrapperDetails{
+    display: block;
+   width: auto;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 18px;
+   background-color:white;
+}
+
+.detailsTitle{
+    font-size: 2rem;
+    font-style: italic;
+    color: indianred;
+}
+
+.priceDescription{
+   font-size:20px;
+   font-weight: bold;
+   color: red;
+   
+}
+.poster{
+    border-radius: 20px;
+    padding: initial;
+    width: 450px;
+}
+.country,
+.rating{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Reviews{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(11, 97, 54);
+}
+.reviewsDetails{
+    font-size:16px;
+}
+.buttonUpdate{
+    font-size: 30px;
+    color: black;
+    padding: 10px;
+}
+.buttonEdit{
+    background-color: black;
+}
