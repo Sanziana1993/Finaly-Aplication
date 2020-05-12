@@ -1,0 +1,20 @@
+.weather{
+    
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-size: 20px;
+   
+}
+.temp {
+    font-size: 25px;
+    color:blue;
+}
+
+@media screen and (max-width: 500px){
+    .weather,
+    .temp{
+        text-align: left;
+        font-size: 15px;
+    }
+}

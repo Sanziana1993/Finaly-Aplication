@@ -39,12 +39,39 @@
       "password": "1",
       "retypePassword": "1",
       "id": 6
+    },
+    {
+      "FName": "Ramba",
+      "LName": "Marian",
+      "email": "marianramba@gmail.com",
+      "username": "Ramba123",
+      "password": "1",
+      "retypePassword": "1",
+      "id": 7
+    },
+    {
+      "FName": "Sofletea",
+      "LName": "Eleonora",
+      "email": "norisofletea78@gmail.com",
+      "username": "Nori",
+      "password": "1",
+      "retypePassword": "1",
+      "id": 8
+    },
+    {
+      "FName": "Recean",
+      "LName": "Georgiana-Sanziana",
+      "email": "sanzianarecean@yahoo.com",
+      "username": "Ralu",
+      "password": "1",
+      "retypePassword": "1",
+      "id": 9
     }
   ],
   "reviews": [
     {
       "id": 1,
-      "popularityId": 48004896,
+      "popularityId": 713856,
       "body": "“Just a clean, excellent value for money hotel right in the middle of Ufa.Staff responded to all queries in a quick and friendly manner. They all spoke superb English too.” Benjamin Russia"
     },
     {
@@ -68,22 +95,9 @@
       "body": "“Good“"
     },
     {
-      "review": "good 2",
+      "popularityId": "713856",
+      "body": "Good hotel",
       "id": 6
-    },
-    {
-      "formReview": {
-        "review": "10"
-      },
-      "id": 7
-    },
-    {
-      "review": "11",
-      "id": 8
-    },
-    {
-      "review": "5",
-      "id": 9
     }
   ],
   "popularity": [
@@ -93,7 +107,7 @@
       "name": "Abbazia",
       "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/110/11097521.jpg",
       "description": "Set in a restored monastery, Hotel Abbazia is in the quiet Cannaregio district of Venice, 100 m from Santa Lucia Train Station. The hotel features a large courtyard garden with bar.The Abbazia's classic rooms all have modern bathroom and include a minibar and satellite TV. Free Wi-Fi internet access is available in the entire hotel.",
-      "price": "60",
+      "price": "70",
       "stars": 3,
       "rating": 8.7,
       "ty_summary": "Excellent hotel. Great room.",
@@ -108,7 +122,7 @@
       "name": "Hotel dalla Mora",
       "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1280x900/395/39500182.jpg",
       "description": "Boasting a canal-view terrace and free WiFi throughout, Hotel dalla Mora is located in the Santa Croce district of Venice, a 3-minute walk from San Nicola da Tolentino Church.Rooms come with wooden furniture, a desk and tiled floors, some feature canal views. They have either a private or a shared external bathroom.A sweet Italian breakfast is served every morning in the breakfast room. During the day you can relax on the terrace, furnished with tables and chairs, and enjoy the views on the canal. A lounge area is also available.",
-      "price": "80",
+      "price": "90",
       "stars": 2,
       "rating": 7.3,
       "ty_summary": "Excellent hotel. Fantastic service.",
@@ -121,7 +135,7 @@
       "name": "Garden of Eden Complex",
       "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1280x900/408/40819418.jpg",
       "description": "The south-facing Garden of Eden Complex is located directly at the beach in Sveti Vlas. It offers modern accommodation mostly with sea views and several restaurants and bars.Situated close by to Sunny Beach, the complex offers 7 outdoor pools with children’s sections and 4 pool bars, including a pool patisserie.",
-      "price": "120$",
+      "price": "150",
       "stars": 5,
       "rating": 9.4,
       "ty_summary": "Excellent city hotel. Good for sightseeing with nearby parking areas. Great rooms and fantastic service. Awesome vibe.",
@@ -134,7 +148,7 @@
       "name": "Holiday Inn Ufa",
       "imgUrl": "https://media-cdn.tripadvisor.com/media/photo-s/09/68/0d/ea/img-20151028-225415-largejpg.jpg",
       "description": "One of our top picks in Ufa.Featuring free WiFi and a business centre, Holiday Inn Ufa offers accommodation in Ufa city centre. Guests can enjoy the on-site bar. Free private parking is available on site. The rooms are equipped with a flat-screen TV with satellite channels. Some rooms have a seating area for your convenience. Each room includes a private bathroom.",
-      "price": "48",
+      "price": "60",
       "stars": 4,
       "rating": 9.1,
       "ty_summary": "Excellent hotel for solo travelers. Great rooms in excellent location. Awesome vibe.",
@@ -167,7 +181,7 @@
       "name": "Vythosl",
       "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1024x768/216/21623536.jpg",
       "description": "Featuring free WiFi and a business centre, Holiday Inn Ufa offers accommodation in Ufa city centre. Guests can enjoy the on-site bar. Free private parking is available on site.  The rooms are equipped with a flat-screen TV with satellite channels. Some rooms have a seating area for your convenience. Each room includes a private bathroom.",
-      "price": "45",
+      "price": "60",
       "stars": 3,
       "rating": 9.2,
       "ty_summary": "Excellent hotel for solo travelers. Close to parking areas. Great room. Awesome vibe.",
@@ -210,7 +224,7 @@
       "name": "Route Active Hotel",
       "imgUrl": "https://q-cf.bstatic.com/images/hotel/max1280x900/189/189125882.jpg",
       "description": "Set in Los Realejos in the Tenerife Region, 6.6 km from Puerto de la Cruz, Route Active Hotel features an outdoor pool and views of the sea.  Each room is equipped with a seating area and flat-screen TV. Views of the mountain, pool or garden are featured in all rooms. Every room comes with a private bathroom including free toiletries and a hairdryer. Free WiFi is available in common areas.",
-      "price": "65",
+      "price": "80",
       "stars": 3,
       "rating": 8.4,
       "ty_summary": "Very good hostel. Fantastic service. Great location.",
@@ -236,7 +250,7 @@
       "name": "Hilton Garden ",
       "imgUrl": "https://r-cf.bstatic.com/images/hotel/max1280x900/233/233736342.jpg",
       "description": "Situated in the Old Town of Bucharest, Hilton Garden Inn Bucharest is 400 m from Bucharest National Theater and provides facilities like free WiFi, a fitness centre, and a shared lounge.",
-      "price": "86",
+      "price": "90",
       "stars": 3,
       "rating": 8,
       "ty_summary": "Very good hotel for solo travelers. Close to parking areas.",
@@ -259,13 +273,6 @@
       "ty_summary": "Very good accommodation. Fantastic service.",
       "property_type": "guest_house",
       "has_wifi": false
-    },
-    {
-      "name": " Test",
-      "description": "test ",
-      "price": "1",
-      "country": "test",
-      "id": 48095022
     }
   ]
 }

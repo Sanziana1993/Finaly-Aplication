@@ -1,15 +1,13 @@
-
 import React, { useContext , useState } from 'react';
-import { Link ,useHistory  } from 'react-router-dom'
-import AuthContext from '../auth/AuthContext'
-import Promises from '../promises/Promises'
+import { Link , useHistory  } from 'react-router-dom';
+import AuthContext from '../auth/AuthContext';
 
 
-import '../style/Header.css'
-
+import '../style/Header.css';
 
 
 function Header(props){
+
     const { user, setUser } = useContext(AuthContext);
     const [query ,setQuery] = useState('');
     const history = useHistory();
@@ -18,35 +16,34 @@ function Header(props){
 
     function handleLogout(e) {
         e.preventDefault();
-
         setUser(null);
         localStorage.removeItem('user');
     }
+
     function handleInputChange(e){
         if(timeout){
             clearTimeout(timeout);
         }
-        setQuery(e.currentTarget.value);
-        const value = e.currentTarget.value
-        console.log(value)
-        timeout = setTimeout(() => history.push('/q=' !== value) , 400);
 
+        setQuery(e.currentTarget.value);
+        const value = e.currentTarget.value;
+
+        timeout = setTimeout(() => history.push('/?q=' + value) , 400);
     }
+
     return (
-        <>
-        <div className="wrapper"> 
+      
+         
             <nav className ="navbar">
-                <div >
-                    <ul  >
+                    <ul className = "ul" >
                         <li > <Link  to="/">Home </Link> </li>
-                        <li > <Link  to="/">Forum </Link></li>
-                        <li > <Link  to="/">Help Center</Link></li>
-                        
+                        <li > <Link  to="/about">About Us</Link></li>
                         <li>
                                 { ( user ?   
                                 <>
                                     <Link  to="/update">Add Hotel </Link> 
-                                    <a href="/"  onClick={ handleLogout }>Logout , { user}</a> </>
+                                    <a href="/"  onClick={ handleLogout }> Logout , { user}</a> 
+                                </>
                                    
                                 :
                                     <>
@@ -64,23 +61,12 @@ function Header(props){
                             <input 
                                 onChange ={handleInputChange}
                                 value = {query} 
-                                placeholder = 'Search hotel'
-                            /> 
-                        </li>
-                         
-
-                    </ul>
-                    
-                </div> 
-               
-            </nav>   
-                 
-        </div>
-        
-        
-    
-         </>
-     
+                                placeholder = 'Search hotel by Country'
+                                className ="search_city"
+                             /> 
+                         </li>
+                    </ul> 
+                </nav>
     )
 }
 

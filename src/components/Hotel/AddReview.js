@@ -1,36 +1,46 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext,useState, useEffect } from 'react'
+import { useParams , Redirect } from 'react-router-dom';
 import axios from 'axios';
-import Axios from 'axios';
-import { useParams } from 'react-router-dom';
+
+import AuthContext from '../auth/AuthContext';
+
+import '../style/AddReview.css';
 
 
 function AddReview(){
 
-const{popularityId} =useParams();
+const{reviewId} = useParams();
 const[review , setReview] = useState(null);
 const [formReview , setFormAdd] = useState({
-    'review' : ''
+    'body' : '',
+     
 });
-
 const [isDirty , setisDirty] = useState(false);
+const [redirect , setRedirect] = useState(false);
+
+const { user} = useContext(AuthContext);
+
+
 async function getReviewbyID (id){
     try{
-        const res = await Axios('reviews?popularityId ='+ id)
+        const res = await axios.get('reviews?reviewId ='+ id)
         setReview(res.data)
+       
     }catch(e){
         console.warn(e)
     }
 }
 
 async function handleSubmit(e){
-    
+    e.preventDefault();
     try{
-        await axios('reviews?popularityId ='  , {
+        await axios('reviews?reviewId ='  , {
             method :'POST',
-            data :{ ...formReview}
+            data :{  body: formReview.body,
+                     popularityId :reviewId}
+                
         });
-
-    
+        setTimeout(()=> setRedirect(true),1000);
     }catch(e){
         console.warn(e);
     }
@@ -40,28 +50,34 @@ function handleInputChange(e){
     setisDirty(true);
 
     setFormAdd({
-        ...formReview,
+        formReview,
         [e.currentTarget.id] : e.currentTarget.value
     });
 }
+
 useEffect(() => {
-    getReviewbyID(popularityId);
-}, [popularityId])
-    if(!review){
-        return <h3>'Loading'</h3>
-    }
+    getReviewbyID(reviewId);
+}, [reviewId])
+       
+if(redirect){
+    return <Redirect to = '/' />
+}
+   if(!review){
+       return <h3>Loading </h3>
+   }
     return(
-        <div>
-        <h1>Review hotel: </h1>
+        <div className = "formReviewAdd">
+        <h2 className = 'titleReview'> Review hotel </h2>
         <form className = 'formEdit' onSubmit ={handleSubmit}>
             <input
                 onChange = { handleInputChange }
-                value = {formReview.review}
+                value = {formReview.body}  
                 type = 'text'
                 className = 'form-control '
-                id = 'review'
-                placeholder = "Enter review "
+                id = 'body'
+                placeholder = " Enter review and name"
             />
+             Username: {user}
             <button type = 'submit' className = 'buttonSave' disabled ={ !isDirty}>Save</button>
         </form>
     </div>

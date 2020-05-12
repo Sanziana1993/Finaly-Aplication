@@ -5,33 +5,32 @@ import axios from 'axios';
 import '../style/AddHotel.css'
 
 
-
-
 function AddHotel(){
 
     const [formHotel , setForm] = useState({
         'name' :' ',
+         'imgUrl':'',
         'description':'',
         'price':'',
         'country':''
     });
     const [isSuccesfull , setSuccesfull] = useState(false);
     const [isDirty , setDirty] = useState(false);
-    const [redirect, setRedirect ] = useState(false);
-    
-    
+    const[redirect ,setRedirect] = useState(false)
+   
+  
     async function handleSubmit(e){
         
             try{
                 await axios.post ('/popularity', formHotel);
+                
                 setSuccesfull(true);
-                setRedirect(true);
+                setTimeout(()=> setRedirect(true),1000);
+             
 
             }catch (e){
                 console.warn(e);
-            }
-            
-        
+            }   
     }
 
     function handleInputChange(e){
@@ -42,21 +41,21 @@ function AddHotel(){
             [e.currentTarget.id]:e.currentTarget.value
         });
     }
+
    if(redirect){
-      return <Redirect to = '/'/>
+       return <Redirect to ='/'/>
    }
     return(
         
             <div className="main">
-                    
                  <h3 className = 'titleCreate'>Add your hotel  </h3>
 
-                { (  isSuccesfull ?
+                {( isSuccesfull ?
 
                     <div className="alert alert-success" role="alert">
                        You have successfully added the hotel!
                      </div>
-                  :null )} 
+                  : null )} 
                 
                  <form className ='formHotel' onSubmit = {handleSubmit}>
                         <div>
@@ -70,7 +69,17 @@ function AddHotel(){
                                
                             />
                         </div>
-                       
+                        <div>
+                             <label className = 'label' htmlFor="photo"> Photo Hotel : </label>
+                             <input 
+                                onChange={ handleInputChange }
+                                value = {formHotel.imgUrl}
+                                className = 'AddNameHotel'
+                                type="link" 
+                                id="imgUrl"  
+                               
+                            />
+                        </div>
                         <div>
                             <label className = 'label' htmlFor="Description">Description Hotel : </label>
                             <input 
@@ -104,10 +113,8 @@ function AddHotel(){
                             />
                          </div>
                          <button type = "submit" disabled ={!isDirty} className = "addButton"> And Hotel </button>
-                 </form>
-                
+                 </form>  
              </div>
-    
     )
 }
 

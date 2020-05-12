@@ -10,6 +10,7 @@
     font-size: 2rem;
     font-style: italic;
     color: indianred;
+    text-align: center;
 }
 
 .priceDescription{
@@ -44,4 +45,27 @@
 }
 .buttonEdit{
     background-color: black;
+}
+.buttonDelete{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+    font-size: 20px;
+    padding: 8px 30px
+}
+@media screen and (max-width: 500px){
+    .detailsTitle{
+        font-size: 0.8 rem;
+        font-style: italic;
+        color: indianred;
+        text-align: left;
+    }
+    .wrapperDetails{
+        display: grid;
+       width: auto;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 15px;
+       background-color:white;
+    }
 }

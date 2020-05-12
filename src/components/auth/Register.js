@@ -2,12 +2,11 @@ import React, { useState, useContext } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
 
-
 import AuthContext from './AuthContext'
 
 import '../style/Register.css'
 
-const errorMesage ={
+const errorMesage = {
     'FName':'You must enter a Firt Name!',
     'LName':'You must enter a Last Name!',
     'email':'You must enter a email!',
@@ -15,10 +14,10 @@ const errorMesage ={
     'password':'You must enter a password!',
     'retypePassword':'You must retype the password!',
     'different-passwords': 'You must enter the same password twice!'
-}
+};
+
 function Register(){
     const [redirect, setRedirect] = useState(false);
-
     const [formData, setFormData] = useState({
         'FName':'',
         'LName':'',
@@ -40,8 +39,7 @@ function Register(){
     const [globalErrorMessage, setGlobalError] = useState('');
     const [isSuccessfull, setSuccessfull] = useState(false);
     const [isDirty , setDirty] = useState(false);
-
-     const {setUser} = useContext(AuthContext);
+    const {setUser} = useContext(AuthContext);
     
    async function handleSubmit(e){
         e.preventDefault();
@@ -52,23 +50,21 @@ function Register(){
             setDirty(false);
         
             try{
-               
-
                const res =  await axios.post('/users', formData);
             
                     setUser(res.data.username);
                     localStorage.setItem('user',res.data.username);
 
                 setSuccessfull(true);
-                setRedirect(true);
+                setTimeout(()=> setRedirect(true),1000);
+
             }catch(e){
                 setGlobalError(e.response.data.message);
               
             }
         }
-
-
     }
+
     function validateFormdata(){
         const inputs =['FName','LName','email','username','password','retypePassword'];
         const newError = {...formError};
@@ -114,7 +110,7 @@ function Register(){
     return(
         <div className = "testbox">
 
-            <h1>Register</h1>
+            <h1 className = 'title_register'>Register</h1>
 
             { (globalErrorMessage ?  
                 <div className="alert alert-danger" role="alert">
@@ -183,7 +179,7 @@ function Register(){
                         onChange = {handleInputChange}
                         value={formData.username} 
                         type= "text"
-                        className = {"inputUser " + (formError.username ? 'is-invalid':'')} 
+                        className = {"inputUserName " + (formError.username ? 'is-invalid':'')} 
                         id ="username" 
                         placeholder="Enter username"
                     />
@@ -233,6 +229,4 @@ function Register(){
 
     )
 }
-
-
 export default Register

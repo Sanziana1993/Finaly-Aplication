@@ -148,3 +148,10 @@ button.social-signin.twitter {
 button.social-signin.google {
   background: #DD4B39;
 }
+
+@media screen and (max-width: 500px){
+  .login-box {
+    display: flex;
+    font-size:20px
+  }
+}

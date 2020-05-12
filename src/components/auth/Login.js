@@ -11,8 +11,6 @@ const errorMessages = {
     'password': 'You must enter a password!',
 };
 
-
-
 export default function Login(){
    
     const [redirect ,setRedirect] = useState(false);
@@ -25,12 +23,7 @@ export default function Login(){
         'password':'',
     });
     const [globalErrorMessage, setGlobalError] = useState('');
-
     const [isSuccessfull, setSuccessfull] = useState(false);
-
-    const [isDirty, setDirty] = useState(false);
-
-    
     const {setUser} = useContext(AuthContext)
 
     async function handleSumbit(e){
@@ -42,21 +35,21 @@ export default function Login(){
         const isInvalid = validateFormDate() ;
 
         if(!isInvalid){
-            setDirty(false);
+          
 
             try{
                const res =  await axios.get('/users?username=' + formData['username'] + '&password=' + formData['password']);
 
-                    if(res.data.lenght){
-                        setUser(res.data.username);
-                        localStorage.setItem('user',res.data.username);
+                    if(res.data.length){
+                        
+                        setUser(res.data[0].username);
+                        localStorage.setItem('user', res.data[0].username);
                         setSuccessfull(true);
-                        setRedirect(true);
+                        setTimeout(()=> setRedirect(true),1000);
                     }else{
-                        setGlobalError('The user don`t exist !');
+                        setGlobalError('The user doesn`t exists!');
                     }
-                   
-            
+    
             }catch(e){
                 setGlobalError('');
               
@@ -80,9 +73,6 @@ export default function Login(){
     }
 
     function handleInputChange(e){
-
-        setDirty(true);
-
         setFormData({
             ...formData,
             [e.currentTarget.id]:e.currentTarget.value
@@ -120,7 +110,7 @@ export default function Login(){
                         <input 
                             onChange = { handleInputChange }
                             value = { formData.username }
-                            className = {"inputUser " +(formError.username ? 'is-invalid' : '')}
+                            className = {"inputUser " + (formError.username ? 'is-invalid' : '')}
                             id = "username"
                             type="text"
                             name="username"
@@ -143,7 +133,7 @@ export default function Login(){
                                 { formError.password }
                          </div>
                         
-                        <button type="submit" className="buttonLogin" disabled={ !isDirty }> Login </button> 
+                        <button type="submit" className="buttonLogin" > Login </button> 
                   </form>
             </div>
             

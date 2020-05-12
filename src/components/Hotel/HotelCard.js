@@ -11,7 +11,6 @@ function HotelCard({rooms}){
             
            <Link to = {'/popularity/' + rooms.id} className = "titleCard">  {rooms.name}</Link>
            
-
            <img  src={ rooms.imgUrl} alt=" Poster" />
       
    

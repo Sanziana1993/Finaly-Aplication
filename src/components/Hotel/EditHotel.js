@@ -28,7 +28,7 @@ function EditPrice(){
                 method:'PUT',
                 data:{...hotel, 'price': hotel.price},
             });
-            setRedirect(true)
+            setTimeout(()=> setRedirect(true),1000);
         }catch(e){
             console.warn(e);
         }

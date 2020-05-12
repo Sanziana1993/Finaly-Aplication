@@ -2,18 +2,34 @@ img {
     border:none;
     border-radius: 20px;
     padding: 5px;
-    width: 350px;
+    width: 360px;
     height: 250px;
   }
   .card{
-   display: flex;
+   display: grid;
    text-align: center;
    background-color: aqua;
-   padding: 40px;
+   padding: 60px ;
    margin : 5px; 
 }
 .titleCard{
   font-size: 23px;
+}
+@media screen and (max-width: 500px){
+  img {
+  
+    border-radius: 5px;
+    padding: 0px;
+    width: 200px;
+    height: 150px;
+  }
+  .card{
+    display: flex;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px ;
+    margin : 5px; 
+  }
 }
 
     

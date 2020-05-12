@@ -1,3 +1,16 @@
 .walppaper{
         background-color: salmon;
 }
+.WebsiteName{
+        color: red;
+        padding : 10px 450px
+}
+
+@media screen and (max-width: 500px) {
+        .WebsiteName {
+                color: blue;
+                padding : 10px 300px }
+        
+        }
+
+       

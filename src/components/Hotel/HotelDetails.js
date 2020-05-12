@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Axios from 'axios';
 import AuthContext from '../auth/AuthContext';
@@ -13,6 +13,7 @@ function HotelDetails(){
     const { hotelId } = useParams();
     const [hotel, setHotel] = useState(null);
     const [reviews , setReviews] = useState([]);
+    const [redirect ,setRedirect] = useState(false);
 
     const {user} = useContext(AuthContext);
 
@@ -20,13 +21,13 @@ function HotelDetails(){
         try{
             const promises = [];
             promises.push(Axios('/popularity/' + id ).then(res=>res.data));
-            promises.push(Axios('/reviews?popularityId =' + id).then(res=>res.data));
+            promises.push(Axios('/reviews?popularityId=' + id).then(res=>res.data));
 
             const [hotel, reviews] = await Promise.all(promises);
 
             setReviews(reviews);
             setHotel(hotel);
-            console.log(hotel, reviews)
+           
             
             
         }catch(e){
@@ -43,33 +44,28 @@ function HotelDetails(){
     async function handleClick(e){
         e.preventDefault();
 
-        try{
+         if(window.confirm('You want to delete this hotel?'))
+            {
              await Axios('/popularity/' + hotelId ,{
                 method:'DELETE',
                 data:{hotel},
             });
-        }catch(e){
-            console.warn(e);
-        }
+           
+         }
+         setTimeout(()=> setRedirect(true),1000); 
     }
 
-  
+    if(redirect){
+        return <Redirect to ='/' />
+    }
     if(hotel){
 
         return (
 
         <div className ="wrapperDetails">
-            <div>
+            
                 <h1 className="detailsTitle">{hotel.name} </h1>
                 
-                           {
-                            (user ? 
-
-                                <button onClick = {handleClick} >Delete Hotel</button>
-                            : 
-                                null
-                            )}  
-                </div>
                 <img  src={ hotel.imgUrl} alt=" Poster" className ="poster" />
                 
                 <p className ="descrption">{hotel.description}</p>
@@ -102,9 +98,18 @@ function HotelDetails(){
                             )} 
                      </span>
 
-                            {reviews.map(review => <p key={review.id}>{review.body }</p>)}
+                            {reviews.map(review => <p key={review.id}>{review.body }</p>)} 
 
         
+                </div>
+                <div>
+                {
+                            (user ? 
+
+                                <button onClick = {handleClick} className ='buttonDelete'>Delete Hotel</button>
+                            : 
+                                null
+                            )}  
                 </div>
             
     
